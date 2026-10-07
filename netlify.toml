@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+
+# The homepage lives in /website and references assets in sibling folders
+# (../videos, ../creator image, ../review image), so the repo root is published
+# and the root URL is sent to the website folder.
+[[redirects]]
+  from = "/"
+  to = "/website/"
+  status = 302
